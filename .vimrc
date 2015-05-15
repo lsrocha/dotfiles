@@ -25,3 +25,8 @@ else
 endif
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+
+nnoremap <Leader><Up> <C-w>k
+nnoremap <Leader><Down> <C-w>j
+nnoremap <Leader><Left> <C-w>h
+nnoremap <Leader><Right> <C-w>l
