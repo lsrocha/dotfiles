@@ -24,7 +24,14 @@ else
     set term=xterm-256color
 endif
 
+let mapleader = "\<Space>"
+
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>c :tabclose<CR>
+nnoremap <Leader>n :tabnext<CR>
+nnoremap <Leader>b :tabprevious<CR>
 
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Down> <C-w>j
