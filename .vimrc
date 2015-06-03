@@ -29,9 +29,12 @@ let mapleader = "\<Space>"
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 
 nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>c :tabclose<CR>
+nnoremap <Leader>x :tabclose<CR>
 nnoremap <Leader>n :tabnext<CR>
 nnoremap <Leader>b :tabprevious<CR>
+
+nnoremap <Leader>s :split<CR>
+nnoremap <Leader>v :vsplit<CR>
 
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Down> <C-w>j
