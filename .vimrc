@@ -36,6 +36,9 @@ nnoremap <Leader>b :tabprevious<CR>
 nnoremap <Leader>s :split<CR>
 nnoremap <Leader>v :vsplit<CR>
 
+nnoremap H ^
+nnoremap L $
+
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Down> <C-w>j
 nnoremap <Leader><Left> <C-w>h
