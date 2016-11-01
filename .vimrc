@@ -7,7 +7,7 @@ set nocompatible
 
 set tabstop=4
 set softtabstop=4
-set expandtab
+"set expandtab
 set autoindent
 
 set nobomb
@@ -27,6 +27,7 @@ endif
 let mapleader = "\<Space>"
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
