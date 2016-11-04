@@ -44,6 +44,9 @@ nnoremap L $
 nnoremap T gg
 nnoremap B G
 
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>w :w<CR>
+
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Down> <C-w>j
 nnoremap <Leader><Left> <C-w>h
