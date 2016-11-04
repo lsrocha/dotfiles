@@ -27,7 +27,9 @@ endif
 let mapleader = "\<Space>"
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+
 nmap <F8> :TagbarToggle<CR>
+nmap <Leader>/ <Leader>c<Space>
 
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
