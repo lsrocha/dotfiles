@@ -41,6 +41,8 @@ nnoremap <Leader>v :vsplit<CR>
 
 nnoremap H ^
 nnoremap L $
+nnoremap T gg
+nnoremap B G
 
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Down> <C-w>j
