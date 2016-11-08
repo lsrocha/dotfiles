@@ -15,6 +15,9 @@ set number
 
 set laststatus=2
 
+" ***********
+" ** STYLE **
+" ***********
 if has('gui_running')
 	set guifont=Source\ Code\ Pro\ 12
 	colorscheme darkspectrum
@@ -22,28 +25,36 @@ else
     set term=xterm-256color
 endif
 
+" ******************
+" ** MAPPING KEYS **
+" ******************
 let mapleader = "\<Space>"
 
-silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
-
+" PLUGINS
+nmap <Leader>p :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <Leader>/ <Leader>c<Space>
 
+" TABS
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
 nnoremap <Leader>n :tabnext<CR>
 nnoremap <Leader>b :tabprevious<CR>
 
-nnoremap <Leader>s :split<CR>
-nnoremap <Leader>v :vsplit<CR>
-
-nnoremap H ^
-nnoremap L $
+" DOCUMENT
 nnoremap T gg
 nnoremap B G
 
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
+
+" LINE POSITION
+nnoremap H ^
+nnoremap L $
+
+" SPLITS
+nnoremap <Leader>s :split<CR>
+nnoremap <Leader>v :vsplit<CR>
 
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Down> <C-w>j
