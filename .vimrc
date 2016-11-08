@@ -16,10 +16,8 @@ set number
 set laststatus=2
 
 if has('gui_running')
-    set guifont=Source\ Code\ Pro\ 12
-    set guioptions-=T
-    set background=dark
-    colorscheme solarized
+	set guifont=Source\ Code\ Pro\ 12
+	colorscheme darkspectrum
 else
     set term=xterm-256color
 endif
