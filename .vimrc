@@ -37,6 +37,11 @@ nmap <Leader>o :CtrlP<CR>
 nmap <Leader>/ <Leader>c<Space>
 vmap <Leader>/ <Leader>c<Space>
 
+" FUGITIVE (GIT)
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gc :Gcommit<CR>
+nmap <Leader>gd :Gdiff<CR>
+
 " TABS
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
