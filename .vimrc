@@ -57,7 +57,12 @@ nnoremap L $
 nnoremap <Leader>s :split<CR>
 nnoremap <Leader>v :vsplit<CR>
 
+" NAVIGATION
 nnoremap <Leader><Up> <C-w>k
 nnoremap <Leader><Down> <C-w>j
 nnoremap <Leader><Left> <C-w>h
 nnoremap <Leader><Right> <C-w>l
+
+" COPY/PASTE
+nmap <Leader>p "+p
+vmap <Leader>c "+y
