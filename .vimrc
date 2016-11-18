@@ -33,6 +33,7 @@ let mapleader = "\<Space>"
 " PLUGINS
 nmap <F9> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+nmap <Leader>o :CtrlP<CR>
 nmap <Leader>/ <Leader>c<Space>
 vmap <Leader>/ <Leader>c<Space>
 
