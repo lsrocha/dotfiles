@@ -39,8 +39,8 @@ vmap <Leader>/ <Leader>c<Space>
 " TABS
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>x :tabclose<CR>
-nnoremap <Leader>n :tabnext<CR>
-nnoremap <Leader>b :tabprevious<CR>
+nnoremap <Leader><Tab> :tabnext<CR>
+nnoremap <Leader><S-Tab> :tabprevious<CR>
 
 " DOCUMENT
 nnoremap <Home> gg
