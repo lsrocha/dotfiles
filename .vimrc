@@ -66,3 +66,7 @@ nnoremap <Leader><Right> <C-w>l
 " COPY/PASTE
 nmap <Leader>p "+p
 vmap <Leader>c "+y
+
+" MOVING LINES
+nmap <S-Up> ddkP
+nmap <S-Down> ddjP
