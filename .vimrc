@@ -34,6 +34,7 @@ let mapleader = "\<Space>"
 nmap <Leader>p :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <Leader>/ <Leader>c<Space>
+vmap <Leader>/ <Leader>c<Space>
 
 " TABS
 nnoremap <Leader>t :tabnew<CR>
