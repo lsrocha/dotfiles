@@ -31,7 +31,7 @@ endif
 let mapleader = "\<Space>"
 
 " PLUGINS
-nmap <Leader>p :NERDTreeToggle<CR>
+nmap <F9> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <Leader>/ <Leader>c<Space>
 vmap <Leader>/ <Leader>c<Space>
