@@ -43,8 +43,8 @@ nnoremap <Leader>n :tabnext<CR>
 nnoremap <Leader>b :tabprevious<CR>
 
 " DOCUMENT
-nnoremap T gg
-nnoremap B G
+nnoremap <Home> gg
+nnoremap <End> G
 
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
