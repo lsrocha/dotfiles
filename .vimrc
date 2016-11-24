@@ -38,13 +38,20 @@ nmap <Leader>/ <Leader>c<Space>
 vmap <Leader>/ <Leader>c<Space>
 
 " FUGITIVE (GIT)
-nmap <Leader>gs :Gstatus<CR>
-nmap <Leader>gc :Gcommit<CR>
-nmap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+
+" SURROUND
+nmap <Leader>i yss<em>
+nmap <Leader>b yss<strong>
+nmap <Leader>' yss'
+nmap <Leader>" yss"
+nmap <Leader>9 yss)
 
 " TABS
 nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>x :tabclose<CR>
+nnoremap <Leader>w :tabclose<CR>
 nnoremap <Leader><Tab> :tabnext<CR>
 nnoremap <Leader><S-Tab> :tabprevious<CR>
 
@@ -53,7 +60,7 @@ nnoremap <Home> gg
 nnoremap <End> G
 
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>w :w<CR>
+nnoremap <F12> :w<CR>
 
 " LINE POSITION
 nnoremap H ^
@@ -76,3 +83,10 @@ vmap <Leader>c "+y
 " MOVING LINES
 nmap <S-Up> ddkP
 nmap <S-Down> ddjP
+
+" JUMPS
+nmap <C-Left> <C-O>
+nmap <C-Right> <C-I>
+
+" TERMINAL
+nnoremap <Leader>T :!gnome-terminal .<CR>
