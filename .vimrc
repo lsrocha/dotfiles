@@ -21,6 +21,9 @@ set laststatus=2
 if has('gui_running')
 	set guifont=Source\ Code\ Pro\ 12
 	colorscheme darkspectrum
+
+	" TERMINAL
+	nnoremap <Leader>T :!gnome-terminal .<CR>
 else
     set term=xterm-256color
 endif
@@ -85,8 +88,6 @@ nmap <S-Up> ddkP
 nmap <S-Down> ddjP
 
 " JUMPS
+nnoremap <Leader>j :jumps<CR>
 nmap <C-Left> <C-O>
 nmap <C-Right> <C-I>
-
-" TERMINAL
-nnoremap <Leader>T :!gnome-terminal .<CR>
