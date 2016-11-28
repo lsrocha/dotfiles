@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-polyglot"]
 	path = .vim/bundle/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
+[submodule ".vim/bundle/phpfolding.vim"]
+	path = .vim/bundle/phpfolding.vim
+	url = git@github.com:vim-scripts/phpfolding.vim.git
