@@ -15,6 +15,9 @@ set number
 
 set laststatus=2
 
+let g:DisableAutoPHPFolding=1
+autocmd FileType php EnableFastPHPFolds
+
 " ***********
 " ** STYLE **
 " ***********
@@ -51,6 +54,12 @@ nmap <Leader>b yss<strong>
 nmap <Leader>' yss'
 nmap <Leader>" yss"
 nmap <Leader>9 yss)
+
+" FOLDING
+nmap <F6> :EnableFastPHPFolds<CR>
+nmap <F7> :DisablePHPFolds<CR>
+nmap = zo
+nmap - zc
 
 " TABS
 nnoremap <Leader>t :tabnew<CR>
