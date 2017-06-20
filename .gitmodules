@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/phpfolding.vim"]
 	path = .vim/bundle/phpfolding.vim
 	url = git@github.com:vim-scripts/phpfolding.vim.git
+[submodule ".vim/bundle/vdebug"]
+	path = .vim/bundle/vdebug
+	url = git@github.com:joonty/vdebug.git
