@@ -9,6 +9,7 @@ set nocompatible
 
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 "set expandtab
 set autoindent
 
@@ -31,6 +32,7 @@ if has('gui_running')
 	nnoremap <Leader>T :!gnome-terminal .<CR>
 else
     set term=xterm-256color
+	set mouse=a
 endif
 
 " ******************
@@ -58,8 +60,8 @@ nmap <Leader>" yss"
 nmap <Leader>9 yss)
 
 " FOLDING
-nmap <F6> :EnableFastPHPFolds<CR>
-nmap <F7> :DisablePHPFolds<CR>
+nmap <Leader>- :EnableFastPHPFolds<CR>
+nmap <Leader>= :DisablePHPFolds<CR>
 nmap = zo
 nmap - zc
 
