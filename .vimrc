@@ -10,7 +10,7 @@ set nocompatible
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-"set expandtab
+set expandtab
 set autoindent
 
 set nobomb
@@ -18,8 +18,21 @@ set number
 
 set laststatus=2
 
-let g:DisableAutoPHPFolding=1
-autocmd FileType php EnableFastPHPFolds
+set tags=./tags;$HOME
+
+let g:DisableAutoPHPFolding = 1
+
+let g:ctrlp_map = '<Leader>f'
+
+let g:vdebug_options = {
+\   'port': 9001,
+\   'break_on_open': 0,
+\   'path_maps': {
+\    }
+\}
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 
 " ***********
 " ** STYLE **
@@ -41,11 +54,10 @@ endif
 let mapleader = "\<Space>"
 
 " PLUGINS
-nmap <F9> :NERDTreeToggle<CR>
-nmap <F8> :TagbarToggle<CR>
-nmap <Leader>o :CtrlP<CR>
-nmap <Leader>/ <Leader>c<Space>
-vmap <Leader>/ <Leader>c<Space>
+nnoremap <Leader>d :NERDTreeToggle<CR>
+nnoremap <Leader>/ :TagbarToggle<CR>
+nnoremap <Leader>; <Leader>c<Space>
+vnoremap <Leader>; <Leader>c<Space>
 
 " FUGITIVE (GIT)
 nnoremap <Leader>gs :Gstatus<CR>
@@ -53,37 +65,39 @@ nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 
 " SURROUND
-nmap <Leader>i yss<em>
-nmap <Leader>b yss<strong>
-nmap <Leader>' yss'
-nmap <Leader>" yss"
-nmap <Leader>9 yss)
+nnoremap <Leader>i yss<em>
+nnoremap <Leader>b yss<strong>
+nnoremap <Leader>' yss'
+nnoremap <Leader>" yss"
+nnoremap <Leader>9 yss)
 
 " FOLDING
-nmap <Leader>- :EnableFastPHPFolds<CR>
-nmap <Leader>= :DisablePHPFolds<CR>
-nmap = zo
-nmap - zc
+nnoremap <Leader>- :EnableFastPHPFolds<CR>
+nnoremap <Leader>= :DisablePHPFolds<CR>
+nnoremap = zo
+nnoremap - zc
 
 " TABS
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>w :tabclose<CR>
-nnoremap <Leader><Tab> :tabnext<CR>
-nnoremap <Leader><S-Tab> :tabprevious<CR>
+nnoremap <Leader>n :tabnext<CR>
+nnoremap <Leader>p :tabprevious<CR>
 
 " DOCUMENT
 nnoremap <Home> gg
 nnoremap <End> G
 
+nnoremap <Leader>o :e<Space>
 nnoremap <Leader>q :q<CR>
-nnoremap <F12> :w<CR>
+nnoremap <Leader>s :w<CR>
+nnoremap <Leader>N :new<CR>
 
 " LINE POSITION
 nnoremap H ^
 nnoremap L $
 
 " SPLITS
-nnoremap <Leader>s :split<CR>
+nnoremap <Leader>h :split<CR>
 nnoremap <Leader>v :vsplit<CR>
 
 " NAVIGATION
@@ -93,14 +107,13 @@ nnoremap <Leader><Left> <C-w>h
 nnoremap <Leader><Right> <C-w>l
 
 " COPY/PASTE
-nmap <Leader>p "+p
-vmap <Leader>c "+y
+nnoremap <C-V> "+p
+vnoremap <C-C> "+y
 
 " MOVING LINES
-nmap <S-Up> ddkP
-nmap <S-Down> ddjP
+nnoremap <S-Up> ddkP
+nnoremap <S-Down> ddjP
 
 " JUMPS
-nnoremap <Leader>j :jumps<CR>
-nmap <C-Left> <C-O>
-nmap <C-Right> <C-I>
+nnoremap <C-Left> <C-O>
+nnoremap <C-Right> <C-I>
