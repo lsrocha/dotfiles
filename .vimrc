@@ -14,7 +14,7 @@ set expandtab
 set autoindent
 
 set nobomb
-set number
+set number relativenumber
 
 set laststatus=2
 
@@ -23,16 +23,19 @@ set tags=./tags;$HOME
 let g:DisableAutoPHPFolding = 1
 
 let g:ctrlp_map = '<Leader>f'
+let g:ctrlp_cmd = 'CtrlPLastMode'
 
 let g:vdebug_options = {
 \   'port': 9001,
 \   'break_on_open': 0,
-\   'path_maps': {
-\    }
+\   'path_maps': {},
+\   'watch_window_style': 'compact'
 \}
 
 autocmd VimEnter * NERDTree
+" autocmd TabEnter * NERDTreeMirror
 autocmd VimEnter * wincmd p
+" autocmd TabEnter * wincmd p
 
 " ***********
 " ** STYLE **
@@ -107,8 +110,8 @@ nnoremap <Leader><Left> <C-w>h
 nnoremap <Leader><Right> <C-w>l
 
 " COPY/PASTE
-nnoremap <C-V> "+p
-vnoremap <C-C> "+y
+nnoremap <Leader>V "+p
+vnoremap <Leader>C "+y
 
 " MOVING LINES
 nnoremap <S-Up> ddkP
