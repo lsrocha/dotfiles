@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/cscope_maps"]
 	path = .vim/bundle/cscope_maps
 	url = https://github.com/chazy/cscope_maps.git
+[submodule ".vim/bundle/emmet-vim"]
+	path = .vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
