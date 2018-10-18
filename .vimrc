@@ -26,7 +26,7 @@ let g:ctrlp_map = '<Leader>f'
 let g:ctrlp_cmd = 'CtrlPLastMode'
 
 let g:vdebug_options = {
-\   'port': 9001,
+\   'port': 9000,
 \   'break_on_open': 0,
 \   'path_maps': {},
 \   'watch_window_style': 'compact'
