@@ -20,6 +20,7 @@ set laststatus=2
 
 set tags=./tags;$HOME
 
+let g:NERDComMappings = 0
 let g:DisableAutoPHPFolding = 1
 
 let g:ctrlp_map = '<Leader>f'
@@ -28,27 +29,21 @@ let g:ctrlp_cmd = 'CtrlPLastMode'
 let g:vdebug_options = {
 \   'port': 9000,
 \   'break_on_open': 0,
-\   'path_maps': {},
-\   'watch_window_style': 'compact'
+\   'path_maps': {}
 \}
 
 autocmd VimEnter * NERDTree
-" autocmd TabEnter * NERDTreeMirror
 autocmd VimEnter * wincmd p
-" autocmd TabEnter * wincmd p
 
 " ***********
 " ** STYLE **
 " ***********
 if has('gui_running')
-	set guifont=Source\ Code\ Pro\ 12
-	colorscheme darkspectrum
-
-	" TERMINAL
-	nnoremap <Leader>T :!gnome-terminal .<CR>
+    set guifont=Source\ Code\ Pro\ 12
+    colorscheme darkspectrum
 else
     set term=xterm-256color
-	set mouse=a
+    set mouse=a
 endif
 
 " ******************
@@ -57,10 +52,10 @@ endif
 let mapleader = "\<Space>"
 
 " PLUGINS
-nnoremap <Leader>d :NERDTreeToggle<CR>
+nnoremap <Leader>d :NERDTreeMirror<CR>
+nnoremap <Leader>D :NERDTreeClose<CR>
 nnoremap <Leader>/ :TagbarToggle<CR>
-nnoremap <Leader>; <Leader>c<Space>
-vnoremap <Leader>; <Leader>c<Space>
+map <Leader>; <plug>NERDCommenterToggle
 
 " FUGITIVE (GIT)
 nnoremap <Leader>gs :Gstatus<CR>
