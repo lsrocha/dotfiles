@@ -9,14 +9,15 @@ alias gpush='git push'
 alias greset='git reset --soft'
 alias grm='git rm'
 alias gstatus='git status'
+alias gstash='git stash'
 
 ## UTIL
-alias current-basename='basename $(pwd)'
+alias cur-dir='basename $(pwd)'
 
 ## DOCKER
-alias containers-up='docker-compose up -d'
-alias containers-down='docker-compose down'
-# alias web-container='docker exec -it $(basename $(pwd))_web_1 su docker -s /bin/ash'
-alias web-container='docker exec -it $(current-basename)_web_1 bash'
-alias mage='docker exec $(current-basename)_web_1 magento'
-alias php-info='docker exec $(current-basename)_web_1 php -i'
+alias dup='docker-compose up'
+alias ddown='docker-compose down'
+alias dstart='docker-compose start'
+alias dstop='docker-compose stop'
+alias dps='docker ps -a'
+alias dlog='docker logs'
